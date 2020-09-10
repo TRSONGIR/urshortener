@@ -1,0 +1,18 @@
+        RewriteEngine On 
+        #RewriteBase /
+
+        RewriteRule ^developer.html$            developer.php [QSA,L]
+        RewriteRule ^multishrink.html$          multishrink.php [QSA,L]
+        RewriteRule ^stats.html$                public-stats.php [QSA,L]
+        RewriteRule ^feed.rss                   feed.php [QSA,L]
+        RewriteRule ^([^/]+)\.qrcode$           qrcode.php?id=$1 [QSA,L]
+        RewriteRule ^api.php$                   API/simple.php [QSA,L]
+        RewriteRule ^API/write/(get|post)$      API/write.php?method=$1 [QSA,L]
+        RewriteRule ^API/read/(get|post)$       API/read.php?method=$1 [QSA,L]
+        RewriteRule ^([^/]+)/stats$             stats.php?id=$1 [QSA,L]
+        RewriteRule ^([^/]+)/unlock$            unlock.php?id=$1 [QSA,L]
+        
+        # If path is not a directory or file then apply RewriteRule
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d        
+        RewriteRule ^([0-9a-zA-Z-]{1,60})$      go.php?id=$1 [QSA,L]
