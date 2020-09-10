@@ -22,7 +22,7 @@
             //this script translated by www.persianscript.ir (Team)
                        
             // database 
-            define ('MYSQL_USERNAME', 'root');
-            define ('MYSQL_PASSWORD', '');
-            define ('MYSQL_DATABASE', 'short');
-            define ('MYSQL_HOST',     ''); 
+            define ('MYSQL_USERNAME', 'vz4scdlmp7qm1xg8');
+            define ('MYSQL_PASSWORD', 'yy3jlvsfw58qiiss');
+            define ('MYSQL_DATABASE', 'tb4047rmgcwr9zh8');
+            define ('MYSQL_HOST',     'sh4ob67ph9l80v61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'); 
